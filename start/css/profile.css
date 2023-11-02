@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    
+  }
+  
+h1,h2,h3,h4,h5,h6,p,a,li {/*これは行間の高さを設定しています。行間はテキストの行ごとの垂直間隔です。1.2は行の高さをフォントサイズの1.2倍に設定し、行がテキストの読みやすさを向上させる役割を果たします。*/
+  line-height: 1.2;
+  font-family: 'ãƒ’ãƒ©ã‚®ãƒŽæ˜Žæœ ProN','Hiragino Mincho ProN','Yu Mincho Light','YuMincho','Yu Mincho','æ¸¸æ˜Žæœä½“',sans-serif;
+}
+
+a:hover {/*a:hover: このセレクタは、<a>要素がマウスホバーされたときのスタイルを適用するために使用されます。つまり、ユーザーがリンクにマウスカーソルを重ねたときにこのスタイルが有効になります。   */
+  opacity: .5;/* ウスホバー時、リンクの不透明度（透明度）を0.5に設定します。これにより、リンクが半透明になり、元の不透明度（通常は1）の半分の透明度となります。*/
+  transition: .3s;
+}
+
+img {
+  max-width: 100%;
+}
+/*
+------------------------------------------------------------------
+*/
+
+
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+
+.header-waraper{
+  height: 200px;
+  width: 1100;
+
+}
+.header-nav {
+  /* ヘッダーナビゲーション要素に対するスタイル設定 */
+  display: flex; /* ヘッダーナビゲーション内の要素を横並びに配置 */
+  justify-content: space-between; /* 要素間のスペースを均等に配置し、左右に寄せる */
+  max-width: 1100px; /* ヘッダーナビゲーションの最大幅を設定 */
+  margin: 0 auto; /* ヘッダーナビゲーションを水平方向に中央配置 */
+  align-items: center; /* 内部要素を垂直方向に中央配置 */
+  padding-top: 0px; /* ヘッダーナビゲーション上部に30ピクセルの余白を設定 */
+  padding-bottom: 50px; /* ヘッダーナビゲーション下部に50ピクセルの余白を設定 */
+
+}
+.header-logo{
+  height: 200px;
+  margin-left: -50px;
+}
+.header-logo img {
+  width: 500;  /* 幅を自動に設定 */
+  height: 200px;  /* 高さを200pxに設定 */
+}
+
+.header-nav a {
+  display: inline-block;
+}
+.header-nav ul{
+  display: flex;
+}
+.header-nav ul li{
+  padding: 60px 40px;
+  font-size: 20px;
+  list-style: none;
+}
+.header-nav ul li a{
+  color: #000;
+  text-decoration: none;
+}
+
+
+/*-------------------------------------------
+メイン、真ん中
+-------------------------------------------*/
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  height: 500px; /* 新しい高さを指定 */
+
+}
+.main img {
+  width: 1200px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.news-content{
+  width: 1100px;
+  height: 700px;
+}
+
+/*
+------------------------------------------------------------------
+*/
+
+.profile-image{
+  margin: 16px 0 0;
+  text-align: center;
+}
+
+.profile-image img{/*スペースで指定を繋げることで、profile-image クラスの中の img タグを指定しています。*/
+  width: 230px;
+  height: auto;/*height: auto; を指定することで高さは画像の比率を維持したままいい感じに高さを調節してくれます。*/
+  /*border-radius: 80px;/*border-radius はその要素の角の丸みを指定できます。*/
+}
+
+
+.text-center{
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
