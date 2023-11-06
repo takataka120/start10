@@ -73,8 +73,9 @@ align-items: center;
   transform: translate(-50%, -50%)rotate(-90deg);/*要素をさらに移動して中心を揃え、-90度（時計回り）に回転させます。translate(-50%, -50%)は要素自体の中心を基準にして、要素を左上に50%ずつ移動します。これにより、要素の中心が親要素の中心に配置されます。*/
   pointer-events: none;/*要素がマウスイベント（クリック、ホバーなど）を無視するように設定します。これにより、要素の上にマウスを置いても、その下にある要素がマウスイベントを受け取ることができます。*/
 }
-
-
+.player-container svg circle {
+  transition: all 0.2s ease-in-out;
+}
 
 .time-display{
 color: white;
@@ -88,4 +89,14 @@ top: 0%;
 left: 0%;
 width: 100%;
 z-index: -10;/*背景は一番後ろにしたい これを使う*/
+}
+
+.replay {
+  margin-top: 200px;
+}
+
+.play{
+  position: relative;
+  margin-top: 250px;
+  display: block;
 }
