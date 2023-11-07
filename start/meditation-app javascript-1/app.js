@@ -55,11 +55,13 @@ const restartSong = song =>{
 timeSelect.forEach(option => {
   option.addEventListener("click", function() {
     fakeDuration = this.getAttribute("data-time"); // 再生時間を選択します
-    timeDisplay.textContent = `${Math.floor(fakeDuration / 60)}:${Math.floor(
-      fakeDuration % 60
-    )}`; // 時間表示を更新します
+    song.duration = fakeDuration; // 曲の再生時間を更新します
+    let minutes = '0' + Math.floor(fakeDuration / 60);
+    let seconds = '0' + Math.floor(fakeDuration % 60);
+    timeDisplay.textContent = `${minutes.slice(-2)}:${seconds.slice(-2)}`; // 時間表示を更新します
   });
 });
+
 
 // 曲の再生状態をチェックする関数
 const checkPlaying = song => {
@@ -78,13 +80,13 @@ const checkPlaying = song => {
 song.ontimeupdate = function() {
   let currentTime = song.currentTime; // 現在の再生位置を取得します
   let elapsed = fakeDuration - currentTime; // 残り時間を計算します
-  let seconds = Math.floor(elapsed % 60); // 残り秒数を計算します
-  let minutes = Math.floor(elapsed / 60); // 残り分数を計算します
-  timeDisplay.textContent = `${minutes}:${seconds}`; // 時間表示を更新します
+  let seconds = '0' + Math.floor(elapsed % 60); // 残り秒数を計算します
+  let minutes = '0' + Math.floor(elapsed / 60); // 残り分数を計算します
+  timeDisplay.textContent = `${minutes.slice(-2)}:${seconds.slice(-2)}`; // 時間表示を更新します
   let progress = outlineLength - (currentTime / fakeDuration) * outlineLength; // SVGのcircleの進行状況を計算します
   outline.style.strokeDashoffset = progress; // SVGのcircleの進行状況を更新します
 
-  // 曲が終了したときの処理
+  // 曲が選択した再生時間を超えたときの処理
   if (currentTime >= fakeDuration) {
     song.pause(); // 曲を一時停止します
     song.currentTime = 0; // 曲の再生位置を初めに戻します
@@ -92,8 +94,6 @@ song.ontimeupdate = function() {
     video.pause(); // ビデオを一時停止します
   }
 };
-
-
 // 初期の時間表示を設定します　自分でいれたやつ
 let minutes = Math.floor(fakeDuration / 60);
 let seconds = Math.floor(fakeDuration % 60);
