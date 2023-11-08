@@ -15,7 +15,7 @@ const outlineLength = outline.getTotalLength(); // SVGのcircleの長さを取�
 // 再生時間
 const timeSelect = document.querySelectorAll(".time-select button"); // すべての再生時間選択ボタンを取得します
 let fakeDuration = 600; // 初期の再生時間（秒）を設定します
-
+//fakeDurationは音楽の再生時間を制御するための重要な変数
 // SVGのcircleのスタイルを設定します
 outline.style.strokeDashoffset = outlineLength;//SVGのcircle要素の破線の開始位置を設定します。strokeDashoffsetは、破線のパターンが開始する位置を指定します
 outline.style.strokeDasharray = outlineLength;//SVGのcircle要素の破線のパターンを設定します。strokeDasharrayは、破線のパターン（点と空白の長さ）を指定します2
@@ -37,7 +37,7 @@ sounds.forEach(sound => {
 // 再生/一時停止ボタンにクリックイベントリスナーを設定します
 play.addEventListener("click", function() {
   checkPlaying(song); // 曲の再生状態をチェックします
-});
+});//このコードにより、ユーザーは再生/一時停止ボタンをクリックすることで曲の再生と一時停止を切り替えることができます。
 
 // 曲の再起動ボタンにクリックイベントリスナーを設定します
 replay.addEventListener("click", function() {
