@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <head>
     <title>Virtual Keyboard w/ HTML, CSS & JS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="/assets/favicon.ico">
-    <link rel="stylesheet" href="/assets/dcode.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="key.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -19,10 +18,26 @@
     </ul>
     <textarea class="use-keyboard-input" style="position: absolute; top: 130px; right: 30px; width: 300px;"></textarea>
 
-    <div class="keyborad">
+    <div class="keyboard">
         <div class="keyboard__keys">
-            
+            <button type="button" class="keyboard__keys">a</button>
+            <button type="button" class="keyboard__keys keyboard__keys--wide">
+                <i class="material-icons">backspace</i>
+            </button>
+                <i class="material-icons">space_bar</i>
+            </button>
+            <button type="button" class="keyboard__keys keyboard__keys-exstra-wide keyboard__key--activatable">
+                <i class="material-icons">keyboard_capslock</i>
+            </button>
+            <button type="button" class="keyboard__keys keyboard__keys-exstra-wide keyboard__key--dark">
+                <i class="material-icons">check_circle</i>
+            </button>
+            <button type="button" class="keyboard__keys keyboard__keys-exstra-wide keyboard__key--dark">
+                <i class="material-icons">delete</i>
+            </button>
         </div>
     </div>
     <script src="key.js"></script>
 </body>
+
+この教材でアイコンの使い方とjavascriptの使い方を学ぶ
