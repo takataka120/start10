@@ -26,11 +26,29 @@ body {
   
   .main {
     text-align: center; /* 中央揃え */
-    border: 1px solid #ccc; /* ボーダーがある場合、中央配置により要素を中央に配置します。 */
     padding: 20px;
     max-width: 400px; /* 必要に応じて最大幅を設定 */
   }
   
+
+  .box {
+    color: #ffffff; /* 文字色を白に設定 */
+    width: 300px; /* ボックスの幅 */
+    height: 300px; /* ボックスの高さ */
+    border: 1px solid black; /* 枠線の色と太さ */
+    background-color: #3d3636; /* ボックスの背景色 */
+    margin: 0 auto; /* ボックスをページの中央に配置 */
+  }
+  
+  #displayBox {
+    /* その他のスタイル設定 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+
   .input-container {
     margin: 10px; /* 適切な余白の値を指定してください */
   }
@@ -60,3 +78,14 @@ content-box: デフォルトの値で、要素のサイズはコンテンツの�
 border-box: 要素のサイズがコンテンツボックスからボーダーボックスまでを含めたサイズとして解釈されます。つまり、コンテンツ、パディング、ボーダーが要素のサイズとして設定され、マージンは含まれません。
 
 これにより、要素のサイズ指定をより直感的に行うことができます。たとえば、指定した幅や高さが、実際の表示されるサイズと一致するようになります。*/
+
+
+/*
+CSSでは、#と.は異なる種類の要素を選択するために使用されます12。
+
+#はIDセレクタを表します。これはHTMLのid属性を指定します。例えば、#displayBoxはHTML内のid="displayBox"という属性を持つ要素を選択します12。
+
+.はクラスセレクタを表します。これはHTMLのclass属性を指定します。例えば、.boxはHTML内のclass="box"という属性を持つすべての要素を選択します12。
+
+したがって、.displayBoxと#displayBoxは異なる要素を選択します。前者はclass="displayBox"を持つ要素を選択し、後者はid="displayBox"を持つ要素を選択します12。12。
+*/
