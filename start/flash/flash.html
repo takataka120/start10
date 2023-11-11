@@ -5,20 +5,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>portfolio</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="flash.css">
 </head>
 
 <body>
 
-
+<div class="main"> 
 <div id="display"></div>
-<div>
+<div class="input-container">
   <input type="number" id="number" />
+  <label for="speed">スピード:</label>
+<input type="number" id="speed" name="speed" min="1" max="10">
+
 </div>
+
 <div>
   <button type="button" id="start">START</button>
   <button type="button" id="answer">ANSWER</button>
+</div>
 </div>
 <script src="flash.js"></script>
 
