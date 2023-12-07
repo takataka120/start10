@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>フォームのページのコンテナ</title>
+<link href="css/normalize.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap&subset=japanese" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Croissant+One&display=swap" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+<body class="apply">
+<header class="page-header" id="top">
+  <div class="header-container">
+    <div class="sitetitle">
+      <h1 class="header-logo">
+        <a href="index.html"><img src="images/header-logo.svg" alt="Tansaku!"></a>
+      </h1>
+      <div class="navbtn"></div><!-- モバイル用ナビゲーション開閉ボタン。class="close"をつけるとバツになる -->
+    </div>
+    <nav>
+      <ul class="header-nav collapse">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="post.html">最新の特集</a></li>
+        <li><a href="#">地域別に読む</a></li>
+        <li><a href="#">連載一覧</a></li>
+        <li><a href="#">インタビュー</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="breadcrumb">
+  <div class="bc-container">
+    <ul class="bc-nav">
+      <li><a href="index.html">HOME</a></li>
+      <li>Tansaku! 10th Anniversary キャンペーン応募フォーム</li>
+    </ul>
+  </div>
+</div>
+<div class="campaign">
+  <div class="campaign-container">
+    <h2 class="apply-title">
+      <span>Tansaku! 10th Anniversary</span><br>
+      キャンペーン応募フォーム
+    </h2>
+    <p class="apply-lead">Tansaku! が10周年を迎えたのを記念して、プレゼントキャンペーンを実施します。ロゴ入りのオリジナルステンレスマグ、Tシャツ、トートバッグをそれぞれ5名様にプレゼント。当選者にはメールでご連絡いたします。</p>
+  </div>
+</div>
+<div class="present-form">
+  <div class="form-container">
+    <form id="form" class="form" action="#">
+<p>
+  <label for="question1">お名前<span class="required">必須</span></label><br>
+  <input type="text" name="question1" id="question1" placeholder="お名前" required>
+</p>
+<p>
+  <label for="question2">メールアドレス<span class="required">必須</span></label><br>
+  <input type="email" name="question2" id="question2" placeholder="mail@example.com" required>
+</p>
+<p><label for="present">希望のプレゼント</label><span class="required">必須</span><br>
+<select name="present" id="present">
+  <option>プレゼントを選んでください</option>
+  <option value="1" required>ステンレスマグ</option>
+  <option value="2">Tシャツ</option>
+  <option value="3">トートバック</option>
+</select>
+</p>
+<p>
+  <label for="question3">メッセージ</label><br>
+  <textarea id="question3" name="question3"></textarea>
+</p>
+<p>
+  <label><input type="checkbox" name="privacy" value="privacy" required>プライバシー
+  ポリシーに同意する</label>
+</p>
+<p class="form-button">
+<input type="submit" name="send" value="キャンペーンに応募する">
+</p>
+    </form>
+
+  </div>
+</div>
+<div class="page-bottom">
+  <div class="bottom-container">
+    <div class="banner">
+      <div><a href="#"><img src="images/banner-1.png" alt=""></a></div>
+      <div><a href="form.html"><img src="images/banner-2.png" alt=""></a></div>
+    </div>
+    <h2 class="followus">Follow Us!</h2>
+    <div class="sns">
+      <div><a href="#"><i class="fab fa-twitter"></i></a></div>
+      <div><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+      <div><a href="#"><i class="fab fa-instagram"></i></a></div>
+    </div>
+  </div>
+  <div class="gotop">
+    <a href="#top"><i class="fas fa-chevron-up"></i></a>
+  </div>
+</div>
+<footer class="page-footer">
+  <div class="footer-container">
+      <div class="footer-logo">
+        <a href="index.html"><img src="images/footer-logo.svg" alt="Tansaku!"></a>
+      </div>
+      <ul class="footer-nav1">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="post.html">最新の特集</a></li>
+        <li><a href="#">地域別に読む</a></li>
+        <li><a href="#">連載一覧</a></li>
+        <li><a href="#">インタビュー</a></li>
+      </ul>
+      <ul class="footer-nav2">
+        <li><a href="#">このサイトについて</a></li>
+        <li><a href="#">運営会社</a></li>
+      </ul>
+      <p class="copyright">© Tansaku! All rights reserved.</p>
+  </div>
+</footer>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
