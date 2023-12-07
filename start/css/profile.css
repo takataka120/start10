@@ -105,7 +105,9 @@ img {
 -------------------------------------------*/
 
 
-
+.portfolio{
+  text-align: center;
+}
 
 
 
@@ -151,3 +153,18 @@ h1 {
 h2 {
   font-size: 20px;
 }
+
+
+
+.study {
+      text-align: center; /* 中央揃えにする */
+      margin: 20px; /* 外側の余白を追加 */
+    }
+
+    /* .study クラス内の img 要素に適用するスタイル */
+    .study img {
+      width: 700px; /* 画像の幅を100%に設定 */
+      height: auto; /* アスペクト比を維持しつつ、高さは自動調整 */
+      border-radius: 10px; /* 画像に角丸を適用 */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ボックスシャドウを適用 */
+    }
