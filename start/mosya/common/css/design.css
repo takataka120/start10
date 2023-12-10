@@ -1,0 +1,315 @@
+/* CSS Document */
+/*-----------------------------------------------------------
+ フォントサイズの指定はYUI Fontsに基づき
+ 下記テーブルで指定します
+ |px|%|
+ |10|77|
+ |11|85|
+ |12|93|
+ |13|100|
+ |14|108|
+ |15|116|
+ |16|123.1|
+ |17|131|
+ |18|138.5|
+ |19|146.5|
+ |20|153.9|
+ |21|161.6|
+ |22|167|
+ |23|174|
+ |24|182|
+ |25|189|
+ |26|197|
+ ex) 12px
+ element {
+ 	font-size: 93%;
+ }
+ ---------------------------------------------------------------------------------*/
+body {
+	margin:0 auto;
+	padding:0px 0 0;
+	text-align:center;
+	background:#F6F6F6;
+	color:#515151;
+	font-family:Verdana,Arial,Helvetica,'meirio','メイリオ','Hiragino Maru Gothic Pro','ヒラギノ丸ゴ Pro W4',Osaka,'ＭＳ Ｐゴシック',sans-serif;
+}
+#wrapper{
+    padding: 0;
+    margin: 0;
+    border-top: solid 2px #6CC6C4;
+}
+#headerWrapper {
+    margin: 0 auto 20px;
+    width: 920px;
+    text-align: left;
+}
+
+#header{
+    height: 200px;
+    position: relative;
+}
+.sitetitle{
+    position: absolute;
+    top: 30px;
+    position: 0;
+    margin: 0;
+    font-weight: normal;
+}
+.img{
+    max-width: 100%;
+    height: auto;
+}
+.description{
+    text-align: right;
+    position: absolute;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 77%;
+    top: 10px;
+}
+.headerAddress{
+    position: absolute;
+    right: 0;
+    top: 35px;
+    height: 70px;
+}
+.headerAddress .tel{
+    background: url(../images/bgTel.png)no-repeat;
+    right: 0;
+    top: 50px;
+    margin: 0;
+padding: 0 0 0 25px;
+font-size: 150%;
+}
+.headerAddress .time{
+    border: solid 1px #d6d6d6;
+    font-size: 70%;
+    padding: 5px 0;
+    width: 200px;
+    text-align: center;
+}
+.headerAddress .hot{
+    color: rgb(243, 39, 39);
+}
+.navi{
+    position: absolute;
+    bottom: 0px;
+    height: 70px;
+    width: 919px;
+    background-image: linear-gradient(rgb(156,227,225) 0%,rgb(108,198,196) 100%);
+    left: 0px;
+    border: solid 1px #6CC6C4;
+    line-height: 70px;
+}
+.navi ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 70px;
+}
+.navi ul li {
+    list-style: none;
+    float: left;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+}
+.navi ul li a {
+width: 181px;
+text-decoration: none;
+    padding: 17px 0px 18px;
+    width: 182px;
+    display: block;
+}
+.navi ul li a .titleJa {
+    display: block;
+    height: 20px;
+    text-align: center;
+    font-size: 108%;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.navi ul li a .titleEn {
+    display: block;
+    text-align:  center;
+    line-height: 15px;
+    font-size: 77%;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+#contentsWrapper {
+    margin: 0 auto;
+    width: 920px;
+    text-align: left;
+}
+#main{
+    float: right;
+    width: 640px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+#main .inner {
+    background: #ffffff;
+    padding: 20px;
+}
+.news dl {
+    margin: 0 0 15px;
+    padding: 0 10px 10px;
+}
+.news dl dt {
+    float: left;
+    width: 11em;
+    padding: 10px 0;
+    font-weight: bold;
+    line-height: 150%;
+    margin: 0;
+}
+#main .inner {
+    background: #ffffff;
+    padding: 20px;
+    -moz-border-radius: 0px 0px 6px 6px;
+    -webkit-border-radius: 0px 0px 6px 6px;
+    border-radius: 0px 0px 6px 6px;
+    behavior: url(border-radius.htc);
+}
+.subMidashi {
+    height: 50px;
+    padding: 0;
+    margin: 0 0 15px;
+    font-size: 123.1%;
+    border-bottom: solid 3px #6CC6C4;
+    color: #515151 !important;
+}
+.subMidashi .midashiText {
+    display: block;
+    line-height: 50px;
+    padding: 0 0 0 0px;
+}
+.news dl dd {
+    margin: 0;
+    padding: 10px 10px 10px 11em;
+    line-height: 150%;
+    border-bottom: 1px #CCCCCC dotted;
+}
+#menu {
+    float: left;
+    width: 260px;
+}
+#menu .menuTitle01 {
+    margin: 0;
+    padding: 0 15px;
+    color: #fff;
+    background-image: linear-gradient(rgb(156,227,225) 0%,rgb(108,198,196) 100%);
+    font-size: 123.1%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #6CC6C4;
+    height: 40px;
+    line-height: 40px;
+}
+#menu .menuList01 {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #6CC6C4;
+    background-color: #ffffff;
+    list-style: none;
+    margin: 0 0 20px;
+}
+#menu .menuList01 ul {
+    margin: 0 0 20px;
+    padding: 0;
+}
+#menu .menuList01 ul li {
+    margin: 0px 12px;
+    padding: 0 0 0 25px;
+    list-style: none;
+    border-bottom: #6CC6C4 solid 1px;
+    background: url(../images/bgListIcon01.png) no-repeat 5px center;
+}
+#menu .menuList01 ul li a {
+    text-decoration: none;
+    color: #595959;
+    font-size: 108%;
+    padding: 8px 0;
+    display: block;
+    font-weight: bold;
+}
+#menu .menuTitle02 {
+    margin: 0;
+    padding: 0 15px;
+    color: #fff;
+    background-image: linear-gradient(rgb(156,227,225) 0%,rgb(108,198,196) 100%);
+    font-size: 123.1%;
+    height: 40px;
+    line-height: 40px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #6CC6C4;
+}
+#menu .menuList02 {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #6CC6C4;
+    background-color: #fff;
+    list-style: none;
+    margin: 0 0 20px;
+}
+#menu .menuList02 ul {
+    margin: 0 0 20px;
+    padding: 0;
+}
+#menu .menuList02 ul li {
+    margin: 0px 12px;
+    padding: 0 0 0 25px;
+    list-style: none;
+    border-bottom: #6CC6C4 solid 1px;
+    background: url(../images/bgListIcon01.png) no-repeat 5px center;
+}
+#menu .menuList02 ul li a {
+    text-decoration: none;
+    color: #595959;
+    font-size: 108%;
+    padding: 8px 0;
+    display: block;
+    font-weight: bold;
+}
+#footerWrapper {
+    margin: 20px 0 0;
+    text-align: center;
+    height: 130px;
+}
+#footer {
+    width: 920px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 0;
+}
+#footerMenu ul {
+    margin: 0;
+    padding: 0 0 0 15px;
+    height: 30px;
+    list-style: none;
+    background: #6CC6C4;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    behavior: url(border-radius.htc);
+}
+#footerMenu ul li {
+    margin: 0;
+    padding: 0 20px 0 25px;
+    list-style: none;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    background: url(../images/bgFooterIcon.png) left center no-repeat;
+}
+#footerMenu ul a {
+    height: 30px;
+    line-height: 30px;
+    color: #FFF;
+    text-decoration: none;
+}
