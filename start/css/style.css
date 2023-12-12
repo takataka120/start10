@@ -39,6 +39,7 @@ img {
 .header-logo{
   height: 200px;
   margin-left: -50px;
+  max-width: 100%;
 }
 .header-logo img {
   width: 500;  /* 幅を自動に設定 */

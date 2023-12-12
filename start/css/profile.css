@@ -119,6 +119,9 @@ img {
 */
 
 
+.top{
+  padding-bottom: 30px;
+}
 
 .profile{
   padding-top: 50px;
@@ -175,7 +178,10 @@ h3{
 }
 
 
-
+.study-main{
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
 
 .study {
       text-align: center; /* 中央揃えにする */
@@ -189,3 +195,5 @@ h3{
       border-radius: 10px; /* 画像に角丸を適用 */
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ボックスシャドウを適用 */
     }
+
+    /* ---------------------------------------------------------------------------------------- */
