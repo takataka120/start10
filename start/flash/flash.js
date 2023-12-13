@@ -64,6 +64,22 @@ reset.onclick = function () {
 };
 
 
+
+//----------------------------------------------------------
+
+document.getElementById('openModal').addEventListener('click', function() {
+  document.getElementById('overlay').classList.remove('hidden');
+});
+
+document.getElementById('closeModal').addEventListener('click', function() {
+  document.getElementById('overlay').classList.add('hidden');
+});
+
+
+
+
+
+
 /*
 Math.random(): この部分は、0以上1未満の浮動小数点数を返すJavaScriptの組み込み関数です。Math.random() を呼び出すと、0以上1未満のランダムな小数が得られます。例えば、0.237、0.891、0.502などの値が得られます。
 

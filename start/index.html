@@ -7,6 +7,12 @@
   <title>portfolio</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery -->
+  <style>
+    body {
+      display: none; /* body要素を非表示に設定 */
+    }
+  </style>
 </head>
 
 <body>
@@ -37,6 +43,10 @@
         </div>
    
     </div>
-
+    <script>
+        $(document).ready(function() {
+          $('body').fadeIn('slow'); // ページ全体をゆっくりと表示
+        });
+        </script>
 </body>
 
